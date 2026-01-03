@@ -1,0 +1,221 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* CONTAINER PADRÃO */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* HEADER */
+header {
+  background: #1f2933;
+  padding: 15px 0;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: #fff;
+}
+
+nav a {
+  color: #fff;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* SLIDER */
+.slider {
+  background: #111;
+  color: #fff;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.slide {
+  display: none;
+  text-align: center;
+}
+
+.slide.active {
+  display: block;
+}
+
+.slide a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #00c2ff;
+}
+
+/* SEÇÕES */
+section {
+  padding: 50px 0;
+  background: #fff;
+  margin-bottom: 20px;
+}
+
+section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* DIRETORIA */
+.diretoria .cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #fafafa;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* TRABALHOS */
+.trabalhos .blocos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.trabalhos .blocos div {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.trabalhos a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #0077cc;
+}
+
+/* BEM-VINDOS */
+.bem-vindos iframe {
+  width: 100%;
+  height: 350px;
+  border-radius: 10px;
+}
+
+/* ORAÇÃO */
+.oracao form {
+  display: grid;
+  gap: 10px;
+  max-width: 600px;
+  margin: auto;
+}
+
+.oracao input,
+.oracao textarea,
+.oracao button {
+  padding: 10px;
+  font-size: 16px;
+}
+
+#comentarios {
+  margin-top: 30px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.comentario {
+  background: #eee;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+/* FOOTER */
+footer {
+  background: #1f2933;
+  color: #fff;
+  padding: 30px 0;
+}
+
+footer iframe {
+  width: 100%;
+  height: 200px;
+  margin-top: 10px;
+}
+
+.copyright {
+  text-align: center;
+  padding-top: 10px;
+  font-size: 14px;
+}
+
+/* MODAL */
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.7);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 400px;
+}
+
+
+
+
+
+
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  header .container {
+    flex-direction: column;
+  }
+
+  nav {
+    margin-top: 10px;
+  }
+}
