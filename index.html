@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Igreja - Página Inicial</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <h1 class="logo">LOGO IGREJA</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="trabalhos.html">Trabalhos</a>
+      <a href="oracao.html">Oração</a>
+    </nav>
+  </div>
+</header>
+
+<!-- SLIDE -->
+<section class="slider">
+  <div class="slide active">
+    <h2>Título Slide 1</h2>
+    <p>Texto do slide</p>
+    <a href="#">Saiba mais</a>
+  </div>
+  <div class="slide">
+    <h2>Título Slide 2</h2>
+    <p>Texto do slide</p>
+    <a href="#">Saiba mais</a>
+  </div>
+  <div class="slide">
+    <h2>Título Slide 3</h2>
+    <p>Texto do slide</p>
+    <a href="#">Saiba mais</a>
+  </div>
+</section>
+
+<!-- DIRETORIA -->
+<section class="diretoria">
+  <h2>Diretoria</h2>
+  <div class="cards">
+    <div class="card" onclick="openModal('modal1')">
+      <img src="assets/images/pessoa.jpg">
+      <h3>Nome</h3>
+      <p>Função</p>
+    </div>
+  </div>
+</section>
+
+<!-- MODAL -->
+<div id="modal1" class="modal">
+  <div class="modal-content">
+    <span onclick="closeModal('modal1')">&times;</span>
+    <h3>Nome</h3>
+    <p>Descrição completa da função.</p>
+  </div>
+</div>
+
+<!-- TRABALHOS -->
+<section class="trabalhos">
+  <h2>Trabalhos</h2>
+  <div class="blocos">
+    <div>
+      <h3>Catedral</h3>
+      <p>Descrição</p>
+      <a href="trabalhos/catedral.html">Acessar</a>
+    </div>
+    <div>
+      <h3>Congregações</h3>
+      <p>Descrição</p>
+      <a href="trabalhos/congregacoes.html">Acessar</a>
+    </div>
+    <div>
+      <h3>Mundo</h3>
+      <p>Descrição</p>
+      <a href="trabalhos/mundo.html">Acessar</a>
+    </div>
+  </div>
+</section>
+
+<!-- BEM-VINDOS -->
+<section class="bem-vindos">
+  <h2>Bem-vindos</h2>
+  <iframe src="https://www.youtube.com/embed/VIDEO_ID" allowfullscreen></iframe>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-info">
+    <p>Igreja Exemplo</p>
+    <p>Endereço</p>
+    <p>Telefone</p>
+    <p>CNPJ</p>
+    <iframe src="https://www.google.com/maps/embed?pb=MAPA_AQUI"></iframe>
+  </div>
+  <div class="copyright">
+    <p>© 2026 - Todos os direitos reservados</p>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
